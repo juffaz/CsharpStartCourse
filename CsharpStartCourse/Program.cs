@@ -97,11 +97,11 @@ namespace CsharpStartCourse
         private static void Ex2()
         {
 
-            Console.WriteLine("Введите свой возраст");
-            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите свой рост");
+            double weight = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Введите свой вес");
             double height = Convert.ToDouble(Console.ReadLine());
-            double indexBody = (double)(height / (age * age));
+            double indexBody = (double)(height / (weight * weight));
             Console.WriteLine($"Ваш  индекс массы тела (ИМТ) {indexBody}");
         }
 
