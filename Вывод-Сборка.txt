@@ -1,0 +1,6 @@
+﻿Сборка начата…
+1>------ Сборка начата: проект: CsharpStartCourse, Конфигурация: Debug Any CPU ------
+1>C:\Users\user\Source\Repos\CsharpStartCourse\CsharpStartCourse\Program.cs(109,45,109,46): error CS1002: Требуется ";".
+1>C:\Users\user\Source\Repos\CsharpStartCourse\CsharpStartCourse\Program.cs(109,45,109,46): error CS1513: Требуется "}"
+1>Сборка проекта "CsharpStartCourse.csproj" завершена с ошибкой.
+========== Сборка: успешно: 0, с ошибками: 1, без изменений: 0, пропущено: 0 ==========
