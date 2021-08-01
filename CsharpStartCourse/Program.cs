@@ -1,15 +1,20 @@
-﻿using System;
+using System;
 using System.Text;
 using System.Linq;
 
 
+
 namespace CsharpStartCourse
+//#pragma warning restore CS1633 // Нераспознанная директива #pragma
 {
     class Program
     { 
         static void Main(string[] args)
+            
         {
-            Ex1();
+
+            //Ex2();
+            Ex2();
 
 
             //double d = 131231223.111233223121;
@@ -71,28 +76,34 @@ namespace CsharpStartCourse
 
             //Console.WriteLine($"{numb1} + {numb2}  = {sum}"); //++
 
-
-
-            // Ex1
-            //Console.OutputEncoding = Encoding.UTF8;
-            //Console.InputEncoding = Encoding.UTF8;
-
-            //Console.Write("Введите ваше имя: ");
-            //string name = Console.ReadLine();
-
-            //Console.WriteLine("Привет," + name + "!");
-
-
         }
 
+
+     
         private static void Ex1()
         {
-            int a = 29;
-            int b = 2;
-            int p = a / b;
-            int q = a % b;
-            Console.WriteLine(a / b);
-            Console.WriteLine(a == b * p + q);
+ 
+            Console.WriteLine("Введите свое имя");
+            string name = Console.ReadLine();
+            Console.WriteLine("Введите свой возраст");
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите свой вес");
+            double height = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"Вас зовут {name}");
+            Console.WriteLine($"Ваш возраст {age}");
+            Console.WriteLine($"Ваш вес {height}");
         }
+
+        private static void Ex2()
+        {
+
+            Console.WriteLine("Введите свой возраст");
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите свой вес");
+            double height = Convert.ToDouble(Console.ReadLine());
+            double indexBody = (double)(height / (age * age));
+            Console.WriteLine($"Ваш  индекс массы тела (ИМТ) {indexBody}");
+        }
+
     }
 }
